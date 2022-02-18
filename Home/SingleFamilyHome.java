@@ -20,7 +20,7 @@ public class SingleFamilyHome extends Home {
 
     @Override
     public String toString() {
-        return("General Home Monthly Maintenace cost is: " + generalHomeMaintenance);
+        return( super.toString() + "\nMaintenance Fee: " + generalHomeMaintenance);
     }
 
     

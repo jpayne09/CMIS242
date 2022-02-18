@@ -4,7 +4,7 @@ public class TownHome extends Home {
     public double hoaFee;
     public String color;
 
-    public TownHome(String type, int numberofFloors, double hoaFee) {
+    public TownHome(String type, int numberofFloors,  double hoaFee) {
         super(type, numberofFloors);
         this.hoaFee = hoaFee;
     }
@@ -23,6 +23,11 @@ public class TownHome extends Home {
 
     public String getHomeColor(){
         return color;
+    }
+
+
+    public String toString(){
+        return super.toString() + "\nHOA Fee: " + hoaFee;
     }
     
 }
